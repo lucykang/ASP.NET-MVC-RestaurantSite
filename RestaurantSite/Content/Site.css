@@ -1,6 +1,17 @@
-﻿body {
-    padding-top: 50px;
+﻿/* font family */
+@import url(http://fonts.googleapis.com/css?family=Bentham);
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    padding-top: 100px;
     padding-bottom: 20px;
+    font-family: 'Raleway';
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -21,4 +32,40 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+/* Site wide */
+.navbar {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-family: 'Bentham';
+    font-size: 20px;
+}
+
+.navbar-brand > img {
+    height: 50px;
+    margin-top: -15px;
+}
+
+h1, h2, h3 {
+    font-family: 'Bentham';
+}
+
+.footer {
+  position: absolute;
+  display: inline-block;
+  bottom: 0;
+  width:100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  font-family: 'Bentham';
+}
+
+.pull-right{
+    right: 0;
+    position: relative;
+}
+
+.padding-left-right {
+    padding-left: 10px;
 }

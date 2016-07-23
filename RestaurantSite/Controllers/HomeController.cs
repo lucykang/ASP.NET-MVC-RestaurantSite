@@ -13,7 +13,7 @@ namespace RestaurantSite.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult Menu()
         {
             ViewBag.Message = "Your application description page.";
 
