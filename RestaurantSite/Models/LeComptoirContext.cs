@@ -11,8 +11,6 @@ namespace RestaurantSite.Models
             : base("name=LeComptoirConnection")
         {
         }
-
-        public virtual DbSet<Menu> Menus { get; set; }
         public virtual DbSet<Food> Foods { get; set; }
         public virtual DbSet<Beverage> Beverages { get; set; }
         public virtual DbSet<FoodItem> FoodItems { get; set; }

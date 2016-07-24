@@ -9,95 +9,47 @@ namespace RestaurantSite.Controllers
 {
     public class MenuController : Controller
     {
-        //RestaurantContext restaurantDB = new RestaurantContext();
+        LeComptoirContext menuDB = new LeComptoirContext();
         //
         // GET: /Menu/
         public ActionResult Index()
         {
-            //display 'food' & 'beverage' categories
-            //List<Food> foodMenu = restaurantDB.FoodMenu.ToList();
-            //List<Beverage> bevMenu = restaurantDB.BevMenu.ToList();
-            /*
-            List<Food> foodMenu = new List<Food>
-            {
-                new Food("Entree"),
-                new Food("Main"),
-                new Food("Dessert")
-            };
-            List<Beverage> bevMenu = new List<Beverage>
-            {
-                new Beverage("Beer"),
-                new Beverage("Wine"),
-                new Beverage("Soft Drink")
-            };
-            */
-            /*
-            List<Menu> menu = new List<Menu>
-            {
-                new Menu(new Food("Entree")),
-                new Menu(new Food("Main")),
-                new Menu(new Food("Dessert")),
-                new Menu(new Beverage("Beer")),
-                new Menu(new Beverage("Wine")),
-                new Menu(new Beverage("Soft Drink"))
-            };
-            
-            List<Menu> menu = new List<Menu>
-            {
-                new Menu("Beverage"),
-                new Menu("Food")
-            };
-            */
             return View();
         }
-        public ActionResult FoodCategory(string category)
+        public ActionResult FoodCategory()
         {
-            List<Food> food = new List<Food>
-            {
-                new Food("Entree"),
-                new Food("Main"),
-                new Food("Dessert")
-            };
+            List<Food> food = menuDB.Foods.ToList();
             return View(food);
         }
-        public ActionResult BevCategory(string category)
+        public ActionResult BevCategory()
         {
-            List<Beverage> bev = new List<Beverage>
-            {
-                new Beverage("Champagne"),
-                new Beverage("Beer"),
-                new Beverage("Wine"),
-                new Beverage("Soft Drink")
-            };
+            List<Beverage> bev = menuDB.Beverages.ToList();
             return View(bev);
         }
 
         //
         //GET: /Menu/Browse?menu=Entree
-        public ActionResult BrowseFood(string menu = "Entree")
+        public ActionResult BrowseFood(int id = 1)
         {
-            //var foodModel = restaurantDB.FoodMenu.Include("Items").Single(f => f.Name = menu);
-            Food foodModel = new Food(menu);
+            var foodModel = menuDB.Foods.Include("FoodItems").Single(f => f.FoodID == id);
+            
             return View(foodModel);
         }
-        public ActionResult BrowseBeverage(string menu = "Wine")
+        public ActionResult BrowseBeverage(int id = 1)
         {
-            //var bevModel = restuarantDB.BevMenu.Include("Items").Single(b => b.Name = menu);
-            Beverage bevModel = new Beverage(menu);
+            var bevModel = menuDB.Beverages.Include("BevItems").Single(f => f.BeverageID == id);
             return View(bevModel);
         }
         //
         //GET: /Menu/Details
         public ActionResult FoodDetails(int id = 1)
         {
-            //var item = restaurantDB.Items.Find(id);
-            var foodItem = new FoodItem("Item ID #" + id);
+            var foodItem = menuDB.FoodItems.Find(id);
             return View(foodItem);
         }
         public ActionResult BevDetails(int id = 1)
         {
-            //var item = restaurantDB.Items.Find(id);
-            var bevItem = new BevItem("Item ID #" + id);
+            var bevItem = menuDB.BevItems.Find(id);
             return View(bevItem);
         }
     }

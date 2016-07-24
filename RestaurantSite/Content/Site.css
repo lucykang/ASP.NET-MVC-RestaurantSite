@@ -45,6 +45,10 @@ textarea {
     font-size: 20px;
 }
 
+a{
+    color: darkslateblue;
+}
+
 .navbar-brand > img {
     height: 50px;
     margin-top: -15px;
@@ -52,6 +56,39 @@ textarea {
 
 h1, h2, h3 {
     font-family: 'Bentham';
+}
+
+h2 {
+    text-align: center;
+    color: darkslateblue; 
+}
+.navbar-toggle {
+    background-color: darkslateblue;
+}
+
+.icon-bar, .navbar-collapse{
+    background-color: white;
+}
+
+@media only screen and (max-width: 500px) {
+    .menuImage {
+        width: 350px;
+        height: 200px;
+    }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 767px) {
+    .menuImage {
+        width: 550px;
+        height: 400px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .menuImage{
+        height: 400px; 
+        width: 650px;
+    }
 }
 
 /* footer */
@@ -88,3 +125,4 @@ h1, h2, h3 {
 .sns-links > a {
     padding-right: 20px;
 }
+

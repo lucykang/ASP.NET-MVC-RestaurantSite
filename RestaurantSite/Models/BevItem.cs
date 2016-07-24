@@ -22,7 +22,7 @@ namespace RestaurantSite.Models
         {
             this.Name = Name;
         }
-        public virtual int ItemID { get; set; }
+        public virtual int BevItemID { get; set; }
         public virtual int BeverageID { get; set; }
         public virtual string Name { get; set; }
         public virtual string ShortDescription { get; set; }

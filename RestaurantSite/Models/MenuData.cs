@@ -21,7 +21,8 @@ namespace RestaurantSite.Models
             {
                 new Beverage { Name = "Beer" },
                 new Beverage { Name = "Wine" },
-                new Beverage { Name = "Soft Drink" }
+                new Beverage { Name = "Soft Drink" },
+                new Beverage { Name = "Champagne" }
             };
 
             new List<FoodItem>
