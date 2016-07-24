@@ -1,0 +1,20 @@
+﻿@using RestaurantSite.Models
+@model IEnumerable<Beverage>
+
+@{
+    ViewBag.Title = "BevCategory";
+}
+
+<h2>Beverage</h2>
+<ul>
+    @foreach (var item in Model)
+    {
+        <li>@item.Name</li>
+        foreach (var bev in item.BevItems)
+        {
+            <li>Name: @bev.Name</li>
+            <li>@bev.ShortDescription</li>
+            <li>$ @bev.Price</li>
+        }
+    }
+</ul>

@@ -41,16 +41,37 @@ namespace RestaurantSite.Controllers
                 new Menu(new Beverage("Wine")),
                 new Menu(new Beverage("Soft Drink"))
             };
-            */
+            
             List<Menu> menu = new List<Menu>
             {
                 new Menu("Beverage"),
-                new Menu("Entree"),
-                new Menu("Main"),
-                new Menu("Dessert")
+                new Menu("Food")
             };
-            return View(menu);
+            */
+            return View();
         }
+        public ActionResult FoodCategory(string category)
+        {
+            List<Food> food = new List<Food>
+            {
+                new Food("Entree"),
+                new Food("Main"),
+                new Food("Dessert")
+            };
+            return View(food);
+        }
+        public ActionResult BevCategory(string category)
+        {
+            List<Beverage> bev = new List<Beverage>
+            {
+                new Beverage("Champagne"),
+                new Beverage("Beer"),
+                new Beverage("Wine"),
+                new Beverage("Soft Drink")
+            };
+            return View(bev);
+        }
+
         //
         //GET: /Menu/Browse?menu=Entree
         public ActionResult BrowseFood(string menu = "Entree")

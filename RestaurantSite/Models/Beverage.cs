@@ -19,7 +19,7 @@ namespace RestaurantSite.Models
         }
         public virtual int BeverageID { get; set; }
         [Display(Name = "Category")]
-        public virtual string Name { get; set; }
+        public virtual string Name { get; set; } //Wine, Beer, Softdrinks
         public virtual List<BevItem> BevItems { get; set; }
     }
 }

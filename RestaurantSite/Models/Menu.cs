@@ -31,7 +31,7 @@ namespace RestaurantSite.Models
             this.Name = menu;
         }
         public virtual int MenuID { get; set; }
-        public virtual string Name { get; set; }
+        public virtual string Name { get; set; } //Food , Beverage
         public virtual string MenuImage { get; set; }
         //public virtual Food Food { get; set; }
         //public virtual Beverage Beverage { get; set; }

@@ -16,7 +16,7 @@ namespace RestaurantSite.Models
         
         public virtual int FoodID { get; set; }
         [Display(Name="Category")]
-        public virtual string Name { get; set; }
+        public virtual string Name { get; set; } //Entree, Main, Dessert
         public virtual List<FoodItem> FoodItems { get; set; }
     }
 }
