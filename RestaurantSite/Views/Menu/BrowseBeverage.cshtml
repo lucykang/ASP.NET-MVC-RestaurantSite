@@ -1,0 +1,17 @@
+﻿@using RestaurantSite.Models
+@model Beverage
+
+@{
+    ViewBag.Title = "Beverage";
+}
+
+<h2>@Model.Name</h2>
+<ul>
+    @foreach (var item in Model.BevItems)
+    {
+        <li>
+            @Html.ActionLink(item.Name, "BevDetails", new { id = item.ItemID })
+        </li>
+    }
+</ul>
+

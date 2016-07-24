@@ -1,17 +1,38 @@
 ﻿@{
-    ViewBag.Title = "Contact";
+    ViewBag.Title = "CONTACT US";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+<h2 class="text-center">@ViewBag.Title</h2>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
+<div class="row contact-contents">
+    <div class="col-xs-offset-1 col-md-5">
+        <div class="row">
+            <h3>@ViewBag.Message</h3>
+            <address>
+                1F 650-13, Sinsa-dong<br />
+                Gangnam, Seoul 06021<br />
+                <abbr title="Phone">P:</abbr>
+                +82 2.512.8506
+            </address>
+            <address>
+                <strong>Reservation</strong>   <a href="mailto:lecomptoirseoul@gmail.com">lecomptoirseoul@gmail.com</a><br />
+            </address>
+        </div>
+        <div class="row">
+            <h3>Interact with Us</h3>
+            <div class="sns-links">
+                <a href="https://www.facebook.com/Lecomptoirseoul/"><img src="~/Assets/f-logo_online/logos-and-badges_f-logo_online/png/FB-f-Logo__blue_50.png" height="35"/></a>
+                <a href="https://www.instagram.com/le_comptoir_seoul/"><img src="~/Assets/insta_low-res/AppIcon_v2May2016_low-res/Instagram-v051916.png" height="35"/></a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-5">
+        <h3>Get Direction</h3>
+        <iframe width="450"
+                height="250"
+                frameborder="0" style="border:0"
+                lang="en"
+                src="https://www.google.com/maps/embed/v1/search?key=AIzaSyD742E-0ZysSsoOM64VY5MagPE6arIiF_k&q=Le+Comptoir+seoul" allowfullscreen></iframe>
+    </div>
+</div>
 
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+

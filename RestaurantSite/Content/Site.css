@@ -18,6 +18,7 @@ body {
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
+    padding-top: 30px;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -51,14 +52,16 @@ h1, h2, h3 {
     font-family: 'Bentham';
 }
 
+/* footer */
 .footer {
   position: absolute;
   display: inline-block;
   bottom: 0;
-  width:100%;
+  width:75%;
   /* Set the fixed height of the footer here */
   height: 60px;
   font-family: 'Bentham';
+  font-size: 16px;
 }
 
 .pull-right{
@@ -68,4 +71,18 @@ h1, h2, h3 {
 
 .padding-left-right {
     padding-left: 10px;
+}
+
+/* contact page */
+.contact-contents{
+    margin-top: 50px;
+}
+
+.sns-links {
+    padding-top: 5px;
+    padding-bottom: 30px;
+}
+
+.sns-links > a {
+    padding-right: 20px;
 }

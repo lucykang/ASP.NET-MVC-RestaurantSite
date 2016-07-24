@@ -171,18 +171,47 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\MenuController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Beverage.cs" />
+    <Compile Include="Models\BevItem.cs" />
+    <Compile Include="Models\Food.cs" />
+    <Compile Include="Models\FoodItem.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Item.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Menu.cs" />
+    <Compile Include="Models\RestaurantContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\background-2.jpg" />
     <Content Include="Assets\background.jpg" />
+    <Content Include="Assets\f-logo_online\logos-and-badges_f-logo_online\png\FB-f-Logo__blue_100.png" />
+    <Content Include="Assets\f-logo_online\logos-and-badges_f-logo_online\png\FB-f-Logo__blue_1024.png" />
+    <Content Include="Assets\f-logo_online\logos-and-badges_f-logo_online\png\FB-f-Logo__blue_114.png" />
+    <Content Include="Assets\f-logo_online\logos-and-badges_f-logo_online\png\FB-f-Logo__blue_144.png" />
+    <Content Include="Assets\f-logo_online\logos-and-badges_f-logo_online\png\FB-f-Logo__blue_29.png" />
+    <Content Include="Assets\f-logo_online\logos-and-badges_f-logo_online\png\FB-f-Logo__blue_50.png" />
+    <Content Include="Assets\f-logo_online\logos-and-badges_f-logo_online\png\FB-f-Logo__blue_512.png" />
+    <Content Include="Assets\f-logo_online\logos-and-badges_f-logo_online\png\FB-f-Logo__blue_57.png" />
+    <Content Include="Assets\f-logo_online\logos-and-badges_f-logo_online\png\FB-f-Logo__blue_58.png" />
+    <Content Include="Assets\f-logo_online\logos-and-badges_f-logo_online\png\FB-f-Logo__blue_72.png" />
+    <Content Include="Assets\f-logo_online\logos-and-badges_f-logo_online\png\FB-f-Logo__white_100.png" />
+    <Content Include="Assets\f-logo_online\logos-and-badges_f-logo_online\png\FB-f-Logo__white_1024.png" />
+    <Content Include="Assets\f-logo_online\logos-and-badges_f-logo_online\png\FB-f-Logo__white_114.png" />
+    <Content Include="Assets\f-logo_online\logos-and-badges_f-logo_online\png\FB-f-Logo__white_144.png" />
+    <Content Include="Assets\f-logo_online\logos-and-badges_f-logo_online\png\FB-f-Logo__white_29.png" />
+    <Content Include="Assets\f-logo_online\logos-and-badges_f-logo_online\png\FB-f-Logo__white_50.png" />
+    <Content Include="Assets\f-logo_online\logos-and-badges_f-logo_online\png\FB-f-Logo__white_512.png" />
+    <Content Include="Assets\f-logo_online\logos-and-badges_f-logo_online\png\FB-f-Logo__white_57.png" />
+    <Content Include="Assets\f-logo_online\logos-and-badges_f-logo_online\png\FB-f-Logo__white_58.png" />
+    <Content Include="Assets\f-logo_online\logos-and-badges_f-logo_online\png\FB-f-Logo__white_72.png" />
+    <Content Include="Assets\insta_low-res\AppIcon_v2May2016_low-res\Instagram-v051916.png" />
     <Content Include="Assets\le-comptoir-logo-long.png" />
     <Content Include="Assets\le-comptoir-logo.png" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -203,6 +232,10 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Assets\f-logo_online\logos-and-badges_f-logo_online\ai\FB-fLogo-online-broadcast.ai" />
+    <Content Include="Assets\f-logo_online\logos-and-badges_f-logo_online\eps\FB-fLogo-online-broadcast.eps" />
+    <Content Include="Assets\f-logo_online\logos-and-badges_f-logo_online\psd\FB-fLogo-online.psd" />
+    <Content Include="Assets\f-logo_online\logos-and-badges_f-logo_online\Usage-Online-brand-fLogo.pdf" />
     <None Include="Scripts\jquery-2.2.4.intellisense.js" />
     <Content Include="Scripts\jquery-2.2.4.js" />
     <Content Include="Scripts\jquery-2.2.4.min.js" />
@@ -252,6 +285,11 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Menu\Index.cshtml" />
+    <Content Include="Views\Menu\BrowseFood.cshtml" />
+    <Content Include="Views\Menu\BrowseBeverage.cshtml" />
+    <Content Include="Views\Menu\FoodDetails.cshtml" />
+    <Content Include="Views\Menu\BevDetails.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
