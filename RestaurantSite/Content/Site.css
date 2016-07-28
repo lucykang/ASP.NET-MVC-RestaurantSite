@@ -1,7 +1,15 @@
-﻿/* font family */
+﻿/***************************************/
+/*              Custom CSS             */
+/***************************************/
+
+/* font family */
 @import url(http://fonts.googleapis.com/css?family=Bentham);
 @import url(http://fonts.googleapis.com/css?family=Raleway);
 
+
+/***************************************/
+/*              Site-wide              */
+/***************************************/
 html {
   position: relative;
   min-height: 100%;
@@ -14,7 +22,6 @@ body {
     font-family: 'Raleway';
 }
 
-/* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
@@ -29,13 +36,10 @@ body {
 }
 
 /* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
+input, select, textarea {
     max-width: 280px;
 }
 
-/* Site wide */
 .navbar {
     top: 0;
     position: absolute;
@@ -83,7 +87,9 @@ h2 {
     margin-top: 80px;
 }
 
-/* For Menu page image responsive design */
+/***************************************/
+/*              Menu Pages             */
+/***************************************/
 @media only screen and (max-width: 991px){
     .back-row{
     margin-top: 20px;
@@ -111,33 +117,13 @@ h2 {
     }
 }
 
-/* Menu Pages */
 .food-category, .bev-category {
     margin-top: 20px;
 }
 
-/* footer */
-.footer {
-  position: absolute;
-  display: inline-block;
-  bottom: 0;
-  width:75%;
-  /* Set the fixed height of the footer here */
-  height: 60px;
-  font-family: 'Bentham';
-  font-size: 16px;
-}
-
-.pull-right{
-    right: 0;
-    position: relative;
-}
-
-.padding-left-right {
-    padding-left: 10px;
-}
-
-/* contact page */
+/***************************************/
+/*            Contact Page             */
+/***************************************/
 .contact-contents{
     margin-top: 50px;
 }
@@ -151,3 +137,24 @@ h2 {
     padding-right: 20px;
 }
 
+/***************************************/
+/*                Footer               */
+/***************************************/
+.footer {
+  position: absolute;
+  display: inline-block;
+  bottom: 0;
+  width:75%;
+  height: 60px;
+  font-family: 'Bentham';
+  font-size: 16px;
+}
+
+.pull-right{
+    right: 0;
+    position: relative;
+}
+
+.padding-left-right {
+    padding-left: 10px;
+}

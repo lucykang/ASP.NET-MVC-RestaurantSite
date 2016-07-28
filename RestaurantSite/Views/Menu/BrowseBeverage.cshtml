@@ -6,13 +6,22 @@
     LeComptoirContext menuDB = new LeComptoirContext();
     ViewBag.Title = "Beverage";
 }
+<!--
+    File: BrowseBeverage.cshtml
+    Author: Lucy Kang
+    Website: Le Comptoir Restaurant & Bar
+    Description: This page displays beverage items available by its category.
+-->
 
-<h2>@Model.Name</h2><br />
+<h2>@Model.Name</h2><hr /><br />
 @foreach (var item in Model.BevItems)
 {
     <div class="col-md-3 text-center">
         <a href="@Url.Action("BevDetails", new { id = item.BevItemID })"><img class="img-rounded" src="@menuDB.BevItems.Find(item.BevItemID).Image" height="200" /></a>
-        <h5>@menuDB.BevItems.Find(item.BevItemID).Name</h5>
-        <h5>$ @menuDB.BevItems.Find(item.BevItemID).Price</h5>
+        <h5><strong>@menuDB.BevItems.Find(item.BevItemID).Name</strong></h5>
+        <p>
+            @menuDB.BevItems.Find(item.BevItemID).ShortDescription<br />
+            $ @menuDB.BevItems.Find(item.BevItemID).Price
+        </p>
     </div>
 }

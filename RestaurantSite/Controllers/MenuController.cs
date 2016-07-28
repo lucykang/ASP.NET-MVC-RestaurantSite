@@ -16,11 +16,15 @@ namespace RestaurantSite.Controllers
         {
             return View();
         }
+        //
+        // GET: /Menu/FoodCategory/
         public ActionResult FoodCategory()
         {
             List<Food> food = menuDB.Foods.ToList();
             return View(food);
         }
+        //
+        // GET: /Menu/BevCategory/
         public ActionResult BevCategory()
         {
             List<Beverage> bev = menuDB.Beverages.ToList();
@@ -28,25 +32,29 @@ namespace RestaurantSite.Controllers
         }
 
         //
-        //GET: /Menu/Browse?menu=Entree
+        //GET: /Menu/BrowseFood/1
         public ActionResult BrowseFood(int id = 1)
         {
             var foodModel = menuDB.Foods.Include("FoodItems").Single(f => f.FoodID == id);
             
             return View(foodModel);
         }
+        //
+        //Get: /Menu/BrowseBeverage/1
         public ActionResult BrowseBeverage(int id = 1)
         {
             var bevModel = menuDB.Beverages.Include("BevItems").Single(f => f.BeverageID == id);
             return View(bevModel);
         }
         //
-        //GET: /Menu/Details
+        //GET: /Menu/FoodDetails/1
         public ActionResult FoodDetails(int id = 1)
         {
             var foodItem = menuDB.FoodItems.Find(id);
             return View(foodItem);
         }
+        //
+        // GET: /Menu/BevDetails/1
         public ActionResult BevDetails(int id = 1)
         {
             var bevItem = menuDB.BevItems.Find(id);
