@@ -2,15 +2,15 @@
 @model Food
 
 @{
+    LeComptoirContext menuDB = new LeComptoirContext();
     ViewBag.Title = "BrowseFood";
 }
 
-<h2>@Model.Name</h2>
-<ul>
-    @foreach (var item in Model.FoodItems)
-    {
-        <li>
-            @Html.ActionLink(item.Name, "FoodDetails", new { id = item.FoodItemID })
-        </li>
-    }
-</ul>
+<h2>@Model.Name</h2><br />
+@foreach (var item in Model.FoodItems)
+{
+    <div class="col-md-4 text-center">
+        <a href="@Url.Action("FoodDetails", new { id = item.FoodItemID })"><img class="img-rounded" src="@menuDB.FoodItems.Find(item.FoodItemID).Image" width="300" /></a>
+        <h5>@menuDB.FoodItems.Find(item.FoodItemID).Name</h5>
+    </div>
+}

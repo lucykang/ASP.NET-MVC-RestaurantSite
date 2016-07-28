@@ -5,9 +5,18 @@
 }
 
 <h2>@Model.Name</h2>
-<h5>Category: @Model.Food.Name</h5>
-<p>
-    <img src="@Model.Image" width="500"/><br/>
-    @Model.LongDescription <br />
-    Price: $@Model.Price <br />
-</p>
+<div class="row">
+    <div class="col-md-8 col-lg-8">
+        <br/>
+        <img class="img-responsive" src="@Model.Image" /><br />
+    </div>
+    <div class="col-md-4 col-lg-4">
+        <br />
+        <h5><strong>Category: @Model.Food.Name</strong></h5>
+        <p>
+            @Model.LongDescription <br />
+            <br />
+            Price: $@Model.Price <br />
+        </p>
+    </div>
+</div>

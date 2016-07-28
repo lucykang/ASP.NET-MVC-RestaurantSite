@@ -5,12 +5,17 @@
     ViewBag.Title = "FoodCategory";
 }
 
-<h2>Food Category: @Model.Count()</h2>
-<ul>
+<h2>Food Category</h2>
+<div class="row text-center">
     @foreach (var item in Model)
     {
-        <li>
-            @Html.ActionLink(item.Name, "BrowseFood", new { id = item.FoodID })
-        </li>
+        <div class="col-md-4">
+            <h3>
+                @Html.ActionLink(item.Name, "BrowseFood", new { id = item.FoodID })
+            </h3>
+        </div>
     }
-</ul>
+</div>
+<div class="row text-center">
+    <img src="~/Assets/food1.jpeg" class="img-responsive food-category"/>
+</div>

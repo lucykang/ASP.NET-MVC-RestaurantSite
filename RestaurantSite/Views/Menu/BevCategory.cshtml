@@ -9,12 +9,8 @@
 <ul>
     @foreach (var item in Model)
     {
-        <li>@item.Name</li>
-        foreach (var bev in item.BevItems)
-        {
-            <li>Name: @bev.Name</li>
-            <li>@bev.ShortDescription</li>
-            <li>$ @bev.Price</li>
-        }
+        <li>
+            @Html.ActionLink(item.Name, "BrowseBeverage", new { id = item.BeverageID })
+        </li>
     }
 </ul>
