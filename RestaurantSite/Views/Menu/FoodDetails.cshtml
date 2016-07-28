@@ -12,11 +12,16 @@
     </div>
     <div class="col-md-4 col-lg-4">
         <br />
-        <h5><strong>Category: @Model.Food.Name</strong></h5>
-        <p>
-            @Model.LongDescription <br />
-            <br />
-            Price: $@Model.Price <br />
-        </p>
+        <div class="row">
+            <h5><strong>Category: @Model.Food.Name</strong></h5>
+            <p>
+                @Model.LongDescription <br />
+                <br />
+                Price: $@Model.Price <br />
+            </p>
+        </div>
+        <div class="row text-center back-row">
+            <a class="btn btn-default" href="@Url.Action("BrowseFood", new { href = Request.UrlReferrer, id = Model.FoodID }))">Back</a>
+        </div>
     </div>
 </div>

@@ -70,20 +70,50 @@ h2 {
     background-color: white;
 }
 
+.btn-default{
+    color: darkslateblue;
+}
+
+.btn-default:hover{
+    background-color: darkslateblue;
+    color: white;
+}
+
+.back-row{
+    margin-top: 80px;
+}
+
 /* For Menu page image responsive design */
+@media only screen and (max-width: 991px){
+    .back-row{
+    margin-top: 20px;
+    }
+}
+
 @media only screen and (min-width: 992px) and (max-width:1199px){
     .food-left{
         margin-left: 60px;
     }
     .food-category{
-        margin-left: 20px;
+        margin-left: 100px;
+    }
+    .bev-category {
+        margin-left: 85px;
     }
 }
 
 @media only screen and (min-width: 1200px) {
     .food-category{
-        margin-left: 100px;
+        margin-left: 220px;
     }
+    .bev-category{
+        margin-left: 180px;
+    }
+}
+
+/* Menu Pages */
+.food-category, .bev-category {
+    margin-top: 20px;
 }
 
 /* footer */

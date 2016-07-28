@@ -236,8 +236,10 @@
     <Content Include="Assets\pie.jpg" />
     <Content Include="Assets\restaurant.jpg" />
     <Content Include="Assets\restaurant1.jpg" />
+    <Content Include="Assets\restaurant2.jpg" />
     <Content Include="Assets\soup.JPG" />
     <Content Include="Assets\steak.jpg" />
+    <Content Include="Assets\table.jpg" />
     <Content Include="Assets\wine.jpg" />
     <Content Include="Assets\wine1.JPG" />
     <Content Include="Content\bootstrap-theme.css" />

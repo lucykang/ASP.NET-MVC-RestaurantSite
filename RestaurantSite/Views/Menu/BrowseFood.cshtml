@@ -12,5 +12,6 @@
     <div class="col-md-4 text-center">
         <a href="@Url.Action("FoodDetails", new { id = item.FoodItemID })"><img class="img-rounded" src="@menuDB.FoodItems.Find(item.FoodItemID).Image" width="300" /></a>
         <h5>@menuDB.FoodItems.Find(item.FoodItemID).Name</h5>
-    </div>
+        <h5>$ @menuDB.FoodItems.Find(item.FoodItemID).Price</h5>
+</div>
 }
