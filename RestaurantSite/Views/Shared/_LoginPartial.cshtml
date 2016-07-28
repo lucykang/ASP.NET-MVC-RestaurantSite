@@ -1,4 +1,9 @@
-﻿@using Microsoft.AspNet.Identity
+﻿<!-- 
+    Excluded from the project for now. 
+    Keeping it for later use. 
+-->
+
+@using Microsoft.AspNet.Identity
 @if (Request.IsAuthenticated)
 {
     using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
