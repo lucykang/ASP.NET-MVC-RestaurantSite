@@ -311,6 +311,8 @@
     <Content Include="Views\Menu\BevDetails.cshtml" />
     <Content Include="Views\Menu\FoodCategory.cshtml" />
     <Content Include="Views\Menu\BevCategory.cshtml" />
+    <Content Include="Views\Manage\ChangePassword.cshtml" />
+    <Content Include="Views\Manage\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
