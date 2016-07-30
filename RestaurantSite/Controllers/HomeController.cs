@@ -6,20 +6,18 @@ using System.Web.Mvc;
 
 namespace RestaurantSite.Controllers
 {
+    /*
+        File: HomeController.cs
+        Author: Lucy Kang
+        Website: Le Comptoir Restaurant & Bar
+        Description: This controller routes Landing and Contact page
+    */
     public class HomeController : Controller
     {
         //
         // GET: /
         public ActionResult Index()
         {
-            return View();
-        }
-        //
-        // GET: /Menu/
-        public ActionResult Menu()
-        {
-            ViewBag.Message = "Your application description page.";
-
             return View();
         }
         //

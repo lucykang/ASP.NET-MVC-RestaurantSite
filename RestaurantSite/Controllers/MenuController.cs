@@ -7,6 +7,12 @@ using RestaurantSite.Models;
 
 namespace RestaurantSite.Controllers
 {
+    /*
+        File: MenuController.cs
+        Author: Lucy Kang
+        Website: Le Comptoir Restaurant & Bar
+        Description: This controller routes index, food/BevCategory, BrowseFood/Beverage and Food/BevDetails page.
+    */
     public class MenuController : Controller
     {
         LeComptoirContext menuDB = new LeComptoirContext();

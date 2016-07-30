@@ -231,6 +231,7 @@
     <Content Include="Assets\food1.jpeg" />
     <Content Include="Assets\insta_low-res\AppIcon_v2May2016_low-res\Instagram-v051916.png" />
     <Content Include="Assets\le-comptoir-logo-long.png" />
+    <Content Include="Assets\le-comptoir-logo.ico" />
     <Content Include="Assets\le-comptoir-logo.png" />
     <Content Include="Assets\mushroom.jpg" />
     <Content Include="Assets\pie.jpg" />
